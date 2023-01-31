@@ -1,0 +1,6 @@
+{
+  "id": "tstrem",
+  "display_name": "% of total sleep time, REM sleep",
+  "description": "",
+  "type": "numeric"
+}

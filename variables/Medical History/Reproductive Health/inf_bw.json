@@ -1,0 +1,7 @@
+{
+  "id": "inf_bw",
+  "display_name": "Infant birthweight",
+  "description": "",
+  "type": "numeric",
+  "units": "grams"
+}

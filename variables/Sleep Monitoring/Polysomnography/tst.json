@@ -1,0 +1,7 @@
+{
+  "id": "tst",
+  "display_name": "Total sleep time",
+  "description": "",
+  "type": "numeric",
+  "units": "minutes"
+}

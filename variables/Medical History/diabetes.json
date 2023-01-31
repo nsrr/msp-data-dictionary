@@ -1,0 +1,7 @@
+{
+  "id": "diabetes",
+  "display_name": "Current maternal diagnosed diabetes",
+  "description": "",
+  "type": "choices",
+  "domain": "diabetes"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "mat_wght",
+  "display_name": "Maternal weight at time of PSG",
+  "description": "",
+  "type": "numeric",
+  "units": "lbs"
+}

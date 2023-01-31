@@ -1,0 +1,6 @@
+{
+  "id": "mean_spo",
+  "display_name": "Mean SpO2 value , All Sleep",
+  "description": "",
+  "type": "numeric"
+}

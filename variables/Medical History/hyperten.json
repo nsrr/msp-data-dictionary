@@ -1,0 +1,7 @@
+{
+  "id": "hyperten",
+  "display_name": "Current maternal hypertensive disorder",
+  "description": "",
+  "type": "choices",
+  "domain": "hypt"
+}

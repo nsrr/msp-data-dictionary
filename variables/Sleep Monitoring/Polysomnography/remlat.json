@@ -1,0 +1,7 @@
+{
+  "id": "remlat",
+  "display_name": "Latency to 1st REM sleep",
+  "description": "",
+  "type": "numeric",
+  "units": "minutes"
+}

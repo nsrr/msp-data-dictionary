@@ -1,0 +1,7 @@
+{
+  "id": "inf_ga",
+  "display_name": "Gestational age of infant at birth",
+  "description": "",
+  "type": "numeric",
+  "units": "weeks"
+}

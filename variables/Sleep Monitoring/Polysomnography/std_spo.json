@@ -1,0 +1,6 @@
+{
+  "id": "std_spo",
+  "display_name": "Variability SpO2, All Sleep (standard deviation)",
+  "description": "",
+  "type": "numeric"
+}

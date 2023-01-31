@@ -1,0 +1,17 @@
+[
+  {
+    "value": "0",
+    "display_name": "No",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Adult onset (Type 2)",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Gestational Diabetes",
+    "description": ""
+  }
+]
