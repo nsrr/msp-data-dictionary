@@ -1,11 +1,11 @@
-Msp-data-dictionary Data Dictionary
+MSP Data Dictionary
 ======================
 
-[![Build Status](https://travis-ci.com/<REPOSITORY>/msp-data-dictionary-data-dictionary.svg?branch=master)](https://travis-ci.com/<REPOSITORY>/msp-data-dictionary-data-dictionary)
+[![Build Status](https://app.travis-ci.com/nsrr/msp-data-dictionary.svg?branch=main)](https://app.travis-ci.com/nsrr/msp-data-dictionary)
 
 ### Exports
 
-The msp-data-dictionary data dictionary can be exported to CSV by typing:
+The MSP data dictionary can be exported to CSV by typing:
 
 ```
 spout export
@@ -17,7 +17,7 @@ dictionary.
 
 ### Testing
 
-The msp-data-dictionary data dictionary is tested using the
+The MSP data dictionary is tested using the
 [Spout Gem](https://github.com/sleepepi/spout).
 
 Data dictionary tests can be run by typing:
