@@ -2,5 +2,6 @@
   "id": "visit",
   "display_name": "Psg",
   "description": "visit",
-  "type": "numeric"
+  "type": "choices",
+  "domain": "vnum"
 }
