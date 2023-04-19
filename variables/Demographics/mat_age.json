@@ -3,5 +3,8 @@
   "display_name": "Maternal Age",
   "description": "",
   "type": "integer",
-  "units": "years"
+  "units": "years",
+  "other": {
+    "": null
+  }
 }

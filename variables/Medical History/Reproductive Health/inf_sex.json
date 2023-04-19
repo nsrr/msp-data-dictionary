@@ -3,5 +3,8 @@
   "display_name": "Infant sex",
   "description": "",
   "type": "choices",
-  "domain": "sex"
+  "domain": "sex",
+  "other": {
+    "": null
+  }
 }

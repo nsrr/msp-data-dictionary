@@ -1,6 +1,12 @@
 {
   "id": "mat_bmi",
-  "display_name": "Maternal body mass index at time of PSG ",
+  "display_name": "Maternal body mass index (BMI) at time of PSG ",
   "description": "",
-  "type": "numeric"
+  "type": "numeric",
+  "labels": [
+    "bmi"
+  ],
+  "other": {
+    "": null
+  }
 }

@@ -3,5 +3,8 @@
   "display_name": "Infant birthweight",
   "description": "",
   "type": "numeric",
-  "units": "grams"
+  "units": "grams",
+  "other": {
+    "": null
+  }
 }

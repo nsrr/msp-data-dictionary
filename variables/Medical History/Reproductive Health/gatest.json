@@ -3,5 +3,8 @@
   "display_name": "Gestational age of fetus at time of PSG",
   "description": "",
   "type": "numeric",
-  "units": "weeks"
+  "units": "weeks",
+  "other": {
+    "": null
+  }
 }

@@ -2,5 +2,8 @@
   "id": "fileid",
   "display_name": "ID linking EDF and variable information",
   "description": "",
-  "type": "identifier"
+  "type": "identifier",
+  "other": {
+    "": null
+  }
 }

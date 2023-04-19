@@ -1,0 +1,13 @@
+{
+  "id": "remlat",
+  "display_name": "Latency to 1st REM sleep",
+  "description": "tbc",
+  "type": "numeric",
+  "units": "minutes",
+  "labels": [
+    "sleep_latency"
+  ],
+  "other": {
+    "": null
+  }
+}

@@ -1,7 +1,10 @@
 {
   "id": "mat_race",
-  "display_name": "Maternal race/ethnicity",
+  "display_name": "Self-reported maternal race or ethnicity",
   "description": "(self-reported)",
   "type": "choices",
-  "domain": "raceeth"
+  "domain": "raceeth",
+  "other": {
+    "": null
+  }
 }

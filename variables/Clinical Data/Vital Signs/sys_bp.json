@@ -2,5 +2,8 @@
   "id": "sys_bp",
   "display_name": "Systolic blood pressure prior to PSG",
   "description": "",
-  "type": "numeric"
+  "type": "numeric",
+  "other": {
+    "": null
+  }
 }

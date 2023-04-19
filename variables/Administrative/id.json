@@ -1,7 +1,10 @@
 {
   "id": "id",
   "display_name": "Id",
-  "description": "Subject identified.  Note that numbers are not sequential due to excluded participants. <br><br> PSG ID value include S### (S001 to S132); values in SPSS file are numbered from 1 to 132.",
+  "description": "Subject identifier.  Note that numbers are not sequential due to excluded participants. <br><br> PSG ID value include S### (S001 to S132); values in SPSS file are numbered from 1 to 132.",
   "type": "identifier",
-  "commonly_used": true
+  "commonly_used": true,
+  "other": {
+    "": null
+  }
 }

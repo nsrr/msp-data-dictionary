@@ -2,5 +2,8 @@
   "id": "dia_bp",
   "display_name": "Diastolic blood pressure prior to PSG",
   "description": "",
-  "type": "numeric"
+  "type": "numeric",
+  "other": {
+    "": null
+  }
 }

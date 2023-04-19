@@ -1,7 +1,10 @@
 {
   "id": "visit",
   "display_name": "Psg",
-  "description": "visit",
+  "description": "Visit Number",
   "type": "choices",
-  "domain": "vnum"
+  "domain": "vnum",
+  "other": {
+    "": null
+  }
 }

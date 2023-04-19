@@ -2,5 +2,8 @@
   "id": "mat_par",
   "display_name": "Maternal parity",
   "description": "Number of prior live births",
-  "type": "integer"
+  "type": "integer",
+  "other": {
+    "": null
+  }
 }

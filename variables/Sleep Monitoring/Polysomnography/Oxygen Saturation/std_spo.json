@@ -1,0 +1,12 @@
+{
+  "id": "std_spo",
+  "display_name": "Standard deviation of oxygen saturation (SpO2) during total sleep duration from type I polysomnography",
+  "description": "",
+  "type": "numeric",
+  "labels": [
+    "stdlvlsa_f1t1"
+  ],
+  "other": {
+    "": null
+  }
+}
