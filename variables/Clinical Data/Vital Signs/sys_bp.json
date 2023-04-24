@@ -3,6 +3,7 @@
   "display_name": "Systolic blood pressure prior to PSG",
   "description": "",
   "type": "numeric",
+  "units": "millimeters of mercury (mmHg)",
   "other": {
     "": null
   }

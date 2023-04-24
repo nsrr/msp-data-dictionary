@@ -1,11 +1,11 @@
 {
   "id": "remlat",
-  "display_name": "Latency to 1st REM sleep",
-  "description": "tbc",
+  "display_name": "REM Sleep Latency: the interval between the first sleep epoch and REM sleep including wake from type I polysomnography",
+  "description": "",
   "type": "numeric",
   "units": "minutes",
   "labels": [
-    "sleep_latency"
+    "ttlprdsp_s1sr_f1t1"
   ],
   "other": {
     "": null

@@ -1,6 +1,6 @@
 {
   "id": "tstdeep",
-  "display_name": "Percentage of total sleep duration (i.e., total sleep time, TST) in Stage 3 from type I polysomnography",
+  "display_name": "Percentage of total sleep duration (i.e., total sleep time, TST) in Stage 3/4 from type I polysomnography",
   "description": "",
   "type": "numeric",
   "labels": [
