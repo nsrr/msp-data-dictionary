@@ -3,7 +3,7 @@
 #      Date Created: 29-01-23      Author: Meg Tully                # 
 #-------------------------------------------------------------------#
 
-ver <- "0.1.0.pre"
+ver <- "0.1.0"
 
 library(haven)
 data <- read_sav("//rfawin/BWH-SLEEPEPI-NSRR-STAGING/20221018-dipietro-fhr/NSSRdemoVARIABLES.SAV")
@@ -22,12 +22,12 @@ data$fileid <- paste("msp-S",data$id,sep="")
 data<-data[,c("id","fileid",colnames(data)[2:25])]
 
 #write first dataset
-setwd(paste("C:/Users/mkt27/msp-data-dictionary/csvs/",ver, sep=""))
-write.csv(data, paste("msp-dataset-",ver,".csv",sep=""), row.names = F)
+setwd(paste("//rfawin.partners.org/bwh-sleepepi-nsrr-staging/20221018-dipietro-fhr/nsrr-prep/_releases/",ver, sep=""))
+write.csv(data, paste("msp-dataset-",ver,".csv",sep=""), row.names = F, na="")
 
 #now create harmonized dataset
 
-#datagraphics:
+#demographics:
 data2 <- data.frame(id = data$id,
                     fileid = data$fileid,
                     nsrr_age = data$mat_age,
@@ -48,7 +48,7 @@ for(i in 1:length(data$id)){
 
 data2$nsrr_ahi_hp3u <- data$ahi1
 data2$nsrr_ahi_hp3r_aasm15 <- data$ahi2
-data2$nsrr_ttleffbd	<- data$se
+data2$nsrr_ttleffbd_f1	<- data$se
 data2$nsrr_ttldursp_f1 <- data$tst
 data2$nsrr_pctdursp_s3_f1	<- data$tstdeep
 data2$nsrr_pctdursp_sr_f1	<- data$tstrem
