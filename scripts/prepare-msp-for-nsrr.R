@@ -55,4 +55,4 @@ data2$nsrr_pctdursp_sr_f1	<- data$tstrem
 
 data2$visit = 1
 
-write.csv(data2, paste("msp-dataset-harmonized-",ver,".csv",sep=""), row.names = F)
+write.csv(data2, paste("msp-harmonized-dataset-",ver,".csv",sep=""), row.names = F)
