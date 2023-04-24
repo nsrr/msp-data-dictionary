@@ -1,7 +1,7 @@
 {
   "id": "ahi2",
   "display_name": "Apnea-Hypopnea Index: (All apneas with no oxygen desaturation threshold used and with or without arousal + hypopneas with > 30% flow reduction and with >= 3% oxygen desaturation and with or without arousal) / hour of sleep from type I polysomnography",
-  "description": "The definition for hypopneas is consistent with the following clinical guidelines: (1) American Academy of Sleep Medicine (AASM) 2007 Manual (2012 update) (recommended). [Berry RB et al. 2012 (PubMed ID:23066376)] (https://www.ncbi.nlm.nih.gov/pubmed/23066376), and (2) American Academy of Sleep Medicine (AASM) 2015 (recommended) [Berry RB et al. The AASM Manual for the Scoring of Sleep and Associated Events: Rules, Terminology and Technical Specifications, Version 2.2. American Academy of Sleep Medicine, Darien, IL, 2015.]",
+  "description": "",
   "type": "numeric",
   "units": "events per hour",
   "labels": [
