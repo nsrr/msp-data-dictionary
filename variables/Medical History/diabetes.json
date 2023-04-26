@@ -3,8 +3,5 @@
   "display_name": "Self-reported diagnosis: current maternal diabetes mellitus (DM)",
   "description": "",
   "type": "choices",
-  "domain": "diabetes",
-  "other": {
-    "": null
-  }
+  "domain": "diabetes"
 }

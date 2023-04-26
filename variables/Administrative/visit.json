@@ -3,8 +3,5 @@
   "display_name": "Psg",
   "description": "Visit Number",
   "type": "choices",
-  "domain": "vnum",
-  "other": {
-    "": null
-  }
+  "domain": "vnum"
 }

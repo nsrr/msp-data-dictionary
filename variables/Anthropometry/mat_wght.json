@@ -3,8 +3,5 @@
   "display_name": "Maternal weight at time of PSG",
   "description": "",
   "type": "numeric",
-  "units": "lbs",
-  "other": {
-    "": null
-  }
+  "units": "lbs"
 }

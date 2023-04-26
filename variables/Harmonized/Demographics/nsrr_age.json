@@ -7,8 +7,5 @@
   "labels": [
     "age"
   ],
-  "commonly_used": true,
-  "other": {
-    "": null
-  }
+  "commonly_used": true
 }

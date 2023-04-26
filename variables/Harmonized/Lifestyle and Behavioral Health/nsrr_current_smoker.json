@@ -8,8 +8,5 @@
     "current_smoker",
     "smoking"
   ],
-  "commonly_used": true,
-  "other": {
-    "": null
-  }
+  "commonly_used": true
 }

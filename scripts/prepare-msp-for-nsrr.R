@@ -48,7 +48,7 @@ for(i in 1:length(data$id)){
 
 data2$nsrr_ahi_hp3u <- data$ahi1
 data2$nsrr_ahi_hp3r_aasm15 <- data$ahi2
-data2$nsrr_ttleffbd_f1	<- data$se
+data2$nsrr_effsp_f1	<- data$se
 data2$nsrr_ttldursp_f1 <- data$tst
 data2$nsrr_pctdursp_s3_f1	<- data$tstdeep
 data2$nsrr_pctdursp_sr_f1	<- data$tstrem

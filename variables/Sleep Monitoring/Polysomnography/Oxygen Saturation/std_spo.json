@@ -5,8 +5,5 @@
   "type": "numeric",
   "labels": [
     "stdlvlsa_f1t1"
-  ],
-  "other": {
-    "": null
-  }
+  ]
 }

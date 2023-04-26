@@ -6,8 +6,5 @@
   "labels": [
     "pctdursp_s3_f1t1"
   ],
-  "commonly_used": true,
-  "other": {
-    "": "tstdeep"
-  }
+  "commonly_used": true
 }
