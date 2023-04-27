@@ -3,7 +3,7 @@
 #      Date Created: 29-01-23      Author: Meg Tully                # 
 #-------------------------------------------------------------------#
 
-ver <- "0.1.0"
+ver <- "0.1.1"
 
 library(haven)
 data <- read_sav("//rfawin/BWH-SLEEPEPI-NSRR-STAGING/20221018-dipietro-fhr/NSSRdemoVARIABLES.SAV")
