@@ -3,10 +3,12 @@
 #      Date Created: 29-01-23      Author: Meg Tully                # 
 #-------------------------------------------------------------------#
 
-ver <- "0.1.1"
+ver <- "0.1.2.pre"
 
 library(haven)
 data <- read_sav("//rfawin/BWH-SLEEPEPI-NSRR-STAGING/20221018-dipietro-fhr/NSSRdemoVARIABLES.SAV")
+
+
 
 colnames(data) <- tolower(colnames(data))
 data$visit = 1
@@ -20,6 +22,13 @@ data$fileid <- paste("msp-S",data$id,sep="")
 
 #reorder
 data<-data[,c("id","fileid",colnames(data)[2:25])]
+
+data2 <- read.csv("//rfawin.partners.org/bwh-sleepepi-nsrr-staging/20221018-dipietro-fhr/nsrr-prep/extracted_slptimes.csv")
+data2$fileid <- NA
+for(i in 1:length(data2$file)){data2$fileid[i] <- strsplit(data2$file[i], "[.]")[[1]][1]}
+data2$file <- NULL
+
+data <- full_join(data,data2, by="fileid")
 
 #write first dataset
 setwd(paste("//rfawin.partners.org/bwh-sleepepi-nsrr-staging/20221018-dipietro-fhr/nsrr-prep/_releases/",ver, sep=""))

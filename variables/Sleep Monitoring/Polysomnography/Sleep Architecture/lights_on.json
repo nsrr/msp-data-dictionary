@@ -1,0 +1,7 @@
+{
+  "id": "lights_on",
+  "display_name": "Lights on time",
+  "description": "",
+  "type": "numeric",
+  "units": "hh:mm"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "lights_out",
+  "display_name": "Lights out time",
+  "description": "",
+  "type": "numeric",
+  "units": "hh:mm"
+}
