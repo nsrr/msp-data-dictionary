@@ -3,7 +3,7 @@
 #      Date Created: 29-01-23      Author: Meg Tully                # 
 #-------------------------------------------------------------------#
 
-ver <- "0.1.2.pre"
+ver <- "0.1.2.pre2"
 
 library(haven)
 data <- read_sav("//rfawin/BWH-SLEEPEPI-NSRR-STAGING/20221018-dipietro-fhr/NSSRdemoVARIABLES.SAV")
@@ -23,16 +23,14 @@ data$fileid <- paste("msp-S",data$id,sep="")
 #reorder
 data<-data[,c("id","fileid",colnames(data)[2:25])]
 
-data2 <- read.csv("//rfawin.partners.org/bwh-sleepepi-nsrr-staging/20221018-dipietro-fhr/nsrr-prep/extracted_slptimes.csv")
-data2$fileid <- NA
-for(i in 1:length(data2$file)){data2$fileid[i] <- strsplit(data2$file[i], "[.]")[[1]][1]}
-data2$file <- NULL
+data_extracted <- read.csv("//erisonefs.partners.org/nsrr/datasets/msp/polysomnography/extracted.csv")
+data_extracted$fileid <- NA
+for(i in 1:length(data_extracted$file)){data_extracted$fileid[i] <- strsplit(data_extracted$file[i], "[.]")[[1]][1]}
+data_extracted$file <- NULL
 
-data <- full_join(data,data2, by="fileid")
+data <- full_join(data,data_extracted, by="fileid")
 
-#write first dataset
-setwd(paste("//rfawin.partners.org/bwh-sleepepi-nsrr-staging/20221018-dipietro-fhr/nsrr-prep/_releases/",ver, sep=""))
-write.csv(data, paste("msp-dataset-",ver,".csv",sep=""), row.names = F, na="")
+data <- data[!is.na(data$mat_race),]
 
 #now create harmonized dataset
 
@@ -62,6 +60,31 @@ data2$nsrr_ttldursp_f1 <- data$tst
 data2$nsrr_pctdursp_s3_f1	<- data$tstdeep
 data2$nsrr_pctdursp_sr_f1	<- data$tstrem
 
+data2$nsrr_begtimsp_f1 <- data$stonsetp
+data2$nsrr_endtimsp_f1 <- data$stoffsetp
+data2$nsrr_begtimbd_f1 <- data$stloutp
+data2$nsrr_endtimbd_f1 <- data$stlonp
+
 data2$visit = 1
 
-write.csv(data2, paste("msp-harmonized-dataset-",ver,".csv",sep=""), row.names = F)
+for(i in 1:length(data2$id)){
+  for(j in 1:length(data2[1,])){
+    if(is.na(data2[i,j])){
+      data2[i,j] <- '.'
+    }
+  }
+}
+
+write.csv(data2, paste("//rfawin.partners.org/bwh-sleepepi-nsrr-staging/20221018-dipietro-fhr/nsrr-prep/_releases/",ver,
+"/msp-harmonized-dataset-",ver,".csv",sep=""), row.names = F)
+
+#write first dataset
+setwd(paste("//rfawin.partners.org/bwh-sleepepi-nsrr-staging/20221018-dipietro-fhr/nsrr-prep/_releases/",ver, sep=""))
+write.csv(data, paste("msp-dataset-",ver,".csv",sep=""), row.names = F, na="")
+
+
+
+
+
+
+
