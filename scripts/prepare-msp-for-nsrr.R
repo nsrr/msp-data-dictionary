@@ -3,6 +3,7 @@
 #      Date Created: 29-01-23      Author: Meg Tully                # 
 #-------------------------------------------------------------------#
 
+
 ver <- "0.1.2.pre2"
 
 library(haven)
@@ -31,6 +32,12 @@ data_extracted$file <- NULL
 data <- full_join(data,data_extracted, by="fileid")
 
 data <- data[!is.na(data$mat_race),]
+
+decvars <- c("stloutp_dec",   "stonsetp_dec", "stlonp_dec",    "stoffsetp_dec")
+
+for(i in 1:4){
+  data[,c(decvars[i])] <- period_to_seconds(hms(data[,c(decvars[i])]))/(60*60)
+}
 
 #now create harmonized dataset
 
