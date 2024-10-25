@@ -3,6 +3,7 @@
   "display_name": "Percentage of total sleep duration (i.e., total sleep time, TST) in REM from type I polysomnography",
   "description": "The ratio of time in rapid eye movement sleep (REM) to total sleep time, expressed as a percentage.",
   "type": "numeric",
+  "units": "percent (%)",
   "labels": [
     "rem",
     "pctdursp_sr_f1t1"
